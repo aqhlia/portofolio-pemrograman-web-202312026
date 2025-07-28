@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #60b860;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #35ac35;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gambar logo kampus -->
+    <img src="LOGO2.png" alt="Logo Kampus" style="max-width: 200px; margin-bottom: 20px;">
+
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+    <form action="#" method="post">
+        <!-- Data Pribadi -->
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            <label for="nama">Nama Lengkap (wajib diisi):</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+            <label for="email">Alamat Email (wajib diisi):</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
+
+            <label>Jenis Kelamin (wajib dipilih):</label>
+            <input type="radio" id="pria" name="jenis_kelamin" value="pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" required>
+            <label for="wanita">Wanita</label>
+        </fieldset>
+
+        <!-- Hobi -->
+        <fieldset>
+            <legend>Hobi</legend>
+            <label>Hobi (minimal 2 pilihan):</label>
+
+            <label for="Desain / Menggambar">Desain / Menggambar</label>
+            <input type="checkbox" id="desain / menggambar" name="hobi" value="desain / menggambar">
+            <label for="Olahraga">Olahraga</label>
+            <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+            <label for="Fotografi">Fotografi</label>
+            <input type="checkbox" id="fotografi" name="hobi" value="fotografi">
+            <label for="membaca">Membaca</label>
+            <input type="checkbox" id="membaca" name="hobi" value="membaca">
+
+        </fieldset>
+
+        <!-- Jurusan -->
+        <fieldset>
+            <legend>Jurusan</legend>
+            <label for="jurusan">Pilih Jurusan:</label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="teknik_informatika">Teknik Informatika</option>
+                <option value="teknik elektro">Teknik Elektro</option>
+                <option value="sistem informasi">Sistem Informasi</option>
+                <option value="bisnis digital">Bisnis Digital</option>
+
+            </select>
+        </fieldset>
+ 
+        <!-- Alamat -->
+        <label for="alamat">Alamat Lengkap (opsional):</label>
+        <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap"></textarea>
+
+        <!-- Tombol Submit -->
+        <input type="submit" value="Daftar">
+    </form>
+
+    <!-- Link ke halaman informasi kampus -->
+    <p>Untuk informasi lebih lanjut, kunjungi <a href="https://stitek.ac.id/" target="_blank">halaman informasi
+            kampus</a>.</p>
+
+</body>
+</html>

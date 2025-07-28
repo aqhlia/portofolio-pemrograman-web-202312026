@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #3535ee; /*biru untuk desktop*/
+            margin: 0;
+            font-family: Arial, helvetica;
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+          padding: 20px;
+        }
+        .grid-item {
+          background-color: #f0dce0;
+          padding: 30px;
+          font-size: 25px;
+          text-align: center;
+          border-radius: 10px; 
+          box-shadow: 0 2px 5px #7e7e7e1a;
+        }
+
+        /* Responsive untuk layar kecil */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: #f85454;/*merah untuk mobile*/
+            }
+            .grid-container {
+               grid-template-columns: 1fr; /* 1 kolom */
+               padding:10px;
+            }
+            .grid-item {
+                font-size: 16px;
+            }
+        }   
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+    </div>
+</body>
+</html>
